@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <title>Objects in School</title>
+    <script src="objects.js"></script>
+    <script src="data.js"></script>
+    <script src="actions.js"></script>
+    <link rel="stylesheet" href="style.css"/>
+
+</head>
+<body>
+<h1>School Organizer 2.7.31.2</h1>
+<h2>Add New Items<div>Students</div></h2>
+<p><input id="StudentFirstName" placeholder="First name"></p>
+<p><input id="StudentLastName" placeholder="Last name"></p>
+<p><input id="StudentGrade" placeholder="Grade"></p>
+
+<button id="addNewStudent" onclick="addStudent(); StudentSelectList();"><i class="far fa-plus-square"></i></button>
+<h3><div id="Confirmed"></div></h3>
+
+<br><br>
+<h2>Teachers</h2>
+<p><input id="TeacherFirstName" placeholder="first name"></p>
+<p><input id="TeacherLastName" placeholder="last name"></p>
+<p><input id="TeacherSubject" placeholder="subject"></p>
+
+<button id="addTeacher" onclick="addTeacher(); TeacherSelectList();"><i class="far fa-plus-square"></i></button>
+<h3><div id="Confirmed1"></div></h3>
+
+<br><br>
+<h2>Classes</h2>
+<p><input id="SectionName" placeholder="Class name"></p>
+<p><input id="SectionCount" placeholder="Class count"></p>
+
+<button id="addSection" onclick="addSection(); SectionSelectList(); SectionSelectList1();"><i class="far fa-plus-square"></i></button>
+<h3><div id="Confirmed2"></div></h3>
+
+<br><br>
+
+<select id="list">
+    <option value="0">Students</option>
+    <option value="1">Teachers</option>
+    <option value="2">Classes</option>
+</select>
+
+<button id="listBtn" onclick="listItems()"><i class="fas fa-clipboard-list"></i></button>
+
+<br><br>
+
+<h3><div id="listOutput"></div></h3>
+
+<hr>
+
+<h2>Add People to Classes</h2>
+
+
+
+<select id="studentList">
+    <script>
+        StudentSelectList();
+    </script>
+</select>
+<select id="sectionList">
+    <script>
+        SectionSelectList();
+    </script>
+</select>
+
+
+<button id="addStudentBtn" onclick="addStudentToSection()"><i class="far fa-plus-square"></i></button>
+<h3><div id="studentInSection"></div></h3>
+<br><br>
+
+<select id="teacherList">
+    <script>
+    listItems();
+    TeacherSelectList();
+    </script>
+</select>
+<select id="sectionList1">
+    <script>
+        listItems();
+        SectionSelectList();
+    </script>
+</select>
+<button id="addTeacherBtn" onclick="addTeacherToSection()"><i class="far fa-plus-square"></i></button>
+<h3><div id="teacherInSection"></div></h3>
+<hr>
+<h2>List Students In Class</h2>
+
+</select>
+<select id="sectionList2">
+    <script>
+        SectionSelectList();
+    </script>
+</select>
+<button id= "ListSudentsInSection" onclick="listStudentsInSection()"><i class="fas fa-clipboard-list"></i></button>
+<h3><div id="listStudents"></div></h3>
+
+<hr>
+
+<h2>List Teachers In Classes</h2>
+</select>
+<select id="sectionList3">
+    <script>
+        listItems();
+        SectionSelectList();
+    </script>
+</select>
+<button id= "ListTeachersInClasses" onclick="listTeachersInSection()"><i class="fas fa-clipboard-list"></i></button>
+<h3><div id="listTeachers"></div></h3>
+</body>
+</html>

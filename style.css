@@ -1,0 +1,31 @@
+body {
+    font-family: sans-serif;
+    vertical-align: top;
+    background-color: darkgray;
+}
+h2{
+    font-family: Copperplate;
+    color: whitesmoke;
+}
+h1{
+    font-family: Copperplate;
+    color: cornflowerblue;
+}
+body {
+    background-image: url("img/Hexagon.png");
+}
+button {
+    font-size: 16px;
+    margin-bottom: 44px;
+    background-color: WHITE;
+    padding: 5px 14px;
+    border-radius: 150px;
+    right:50px;
+
+
+}
+
+h3{
+    font-family: Copperplate;
+    color: darkturquoise;
+}
